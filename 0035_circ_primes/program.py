@@ -48,12 +48,14 @@ def power(a: int, n: int, p: int):
 			a = (a ** 2) % p 
 			n = n // 2
 	return res % p
-    
-# If n is prime, then always returns true,
-# If n is composite than returns false with
-# high probability Higher value of k increases
-# probability of correct result
+
 def is_prime(n: int, k: int):
+	'''
+	# If n is prime, then always returns true,
+	# If n is composite than returns false with
+	# high probability Higher value of k increases
+	# probability of correct result
+	'''
 	if n == 1 or n == 4:
 		return False
 	elif n == 2 or n == 3:
